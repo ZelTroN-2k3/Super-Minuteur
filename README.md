@@ -2,7 +2,11 @@
 Projet Arduino Nano : Une minuterie configurable via encodeur rotatif et menu sur écran LCD I2C (20x04). Inclut affichage BigNumbers, temps préréglés, sélection de mélodie (Mario/SW/Zelda), alerte de fin (mélodie + clignotement), et sauvegarde des préférences en EEPROM.
 # Super Minuteur Arduino Avancé
 
+![Super Minuteur Biotier](./images/IMG_20250426_120038.jpg)
+
 Ce projet est une minuterie/compte à rebours avancé basé sur Arduino (testé sur Nano, compatible avec d'autres AVR), utilisant un encodeur rotatif avec bouton poussoir pour l'interaction, un écran LCD I2C 20x4 pour l'affichage, et incluant des fonctionnalités étendues comme l'affichage en grands chiffres, les temps préréglés, la sélection de mélodies de fin et la sauvegarde des préférences en EEPROM.
+
+![Super Minuteur Ecran](./images/IMG_20250426_120127.jpg)
 
 ## Fonctionnalités Principales
 
