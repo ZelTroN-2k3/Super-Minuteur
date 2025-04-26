@@ -92,6 +92,12 @@ Ce projet est une minuterie/compte à rebours avancé basé sur Arduino (testé 
 * `melodie.h` : Définit les fréquences des notes et contient les fonctions (bloquantes) pour jouer les différentes mélodies.
 * `BigNumbers_I2C.h` / `BigNumbers_I2C.cpp` : Bibliothèque pour l'affichage des grands chiffres (fournie).
 
+## Ecran Boot Screen 1:
+![Ecran principal](./images/IMG_20250426_120122.jpg) 
+## Ecran Boot Screen 2:
+![Ecran principal](./images/IMG_20250426_120125.jpg) 
+## Ecran Menu Reglages:
+![Ecran principal](./images/IMG_20250426_120138.jpg) 
 ## Auteur
 
 * [ANCHER.Patrick - défini dans conf.h]
