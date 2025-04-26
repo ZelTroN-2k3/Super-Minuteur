@@ -9,6 +9,7 @@
 //
 //  Date de génération : Vendredi 25 avril 2025 22:45:00 CEST
 //  Lieu : Montmédy, Grand Est, France
+//  Lien : https://github.com/ZelTroN-2k3/Super-Minuteur
 //**************************************************************
 
 #include <EEPROM.h>
