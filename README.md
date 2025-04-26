@@ -94,7 +94,7 @@ Ce projet est une minuterie/compte à rebours avancé basé sur Arduino (testé 
 
 ## Auteur
 
-* [ANCHER.P - à définir dans conf.h]
+* [ANCHER.Patrick - défini dans conf.h]
 
 ## Licence
 
