@@ -83,5 +83,100 @@ void playZeldaTheme() {
   noTone(BUZZER_PIN);
 }
 
+// --- Nouvelle Mélodie : Nokia Tune ---
+void playNokiaTune() {
+  int tempo = 180; // Tempo rapide
+  int eighthNote = (60000 / tempo) / 2;
+  int quarterNote = eighthNote * 2;
+  // int dottedQuarterNote = quarterNote * 1.5;
+  int pause = eighthNote / 4; // Petite pause entre notes
+  int noteDur = 0;
 
+  // Séquence simplifiée mais reconnaissable
+  noteDur = eighthNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_E5, noteDur); delay(eighthNote);
+  tone(BUZZER_PIN, NOTE_D5, noteDur); delay(eighthNote);
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_FS4, noteDur); delay(quarterNote);
+  tone(BUZZER_PIN, NOTE_GS4, noteDur); delay(quarterNote);
+  noteDur = eighthNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_CS5, noteDur); delay(eighthNote);
+  tone(BUZZER_PIN, NOTE_B4, noteDur); delay(eighthNote);
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_D4, noteDur); delay(quarterNote);
+  tone(BUZZER_PIN, NOTE_E4, noteDur); delay(quarterNote); // Note E4 déjà définie ? Sinon ajoutez #define NOTE_E4 330
+  noteDur = eighthNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_B4, noteDur); delay(eighthNote);
+  tone(BUZZER_PIN, NOTE_A4, noteDur); delay(eighthNote);
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_CS4, noteDur); delay(quarterNote);
+  tone(BUZZER_PIN, NOTE_E4, noteDur); delay(quarterNote); // Note E4 déjà définie ?
+  noteDur = quarterNote * 2 - pause; if(noteDur<10) noteDur=10; // Note longue finale
+  tone(BUZZER_PIN, NOTE_A4, noteDur); delay(quarterNote * 2);
+
+  noTone(BUZZER_PIN);
+}
+
+// --- Nouvelle Mélodie : Tetris Theme (Thème A) ---
+void playTetrisTheme() {
+  int tempo = 145;
+  int quarterNote = 60000 / tempo;
+  int eighthNote = quarterNote / 2;
+  int halfNote = quarterNote * 2;
+  int pause = eighthNote / 4;
+  int noteDur = 0;
+
+  // Mesure 1
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_E5, noteDur); delay(quarterNote);
+  noteDur = eighthNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_B4, noteDur); delay(eighthNote);
+  tone(BUZZER_PIN, NOTE_C5, noteDur); delay(eighthNote);
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_D5, noteDur); delay(quarterNote);
+  noteDur = eighthNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_C5, noteDur); delay(eighthNote);
+  tone(BUZZER_PIN, NOTE_B4, noteDur); delay(eighthNote);
+
+  // Mesure 2
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_A4, noteDur); delay(quarterNote);
+  // tone(BUZZER_PIN, NOTE_A4, noteDur); delay(quarterNote); // Répétition A4 enlevée pour simplifier
+  tone(BUZZER_PIN, NOTE_C5, noteDur); delay(quarterNote);
+  tone(BUZZER_PIN, NOTE_E5, noteDur); delay(quarterNote);
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_D5, noteDur); delay(quarterNote);
+  noteDur = eighthNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_C5, noteDur); delay(eighthNote);
+  tone(BUZZER_PIN, NOTE_B4, noteDur); delay(eighthNote);
+
+  // Mesure 3 (identique mesure 1)
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_E5, noteDur); delay(quarterNote);
+  noteDur = eighthNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_B4, noteDur); delay(eighthNote);
+  tone(BUZZER_PIN, NOTE_C5, noteDur); delay(eighthNote);
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_D5, noteDur); delay(quarterNote);
+  noteDur = eighthNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_C5, noteDur); delay(eighthNote);
+  tone(BUZZER_PIN, NOTE_B4, noteDur); delay(eighthNote);
+
+  // Mesure 4
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_A4, noteDur); delay(quarterNote);
+  // tone(BUZZER_PIN, NOTE_A4, noteDur); delay(quarterNote); // Répétition A4 enlevée
+  tone(BUZZER_PIN, NOTE_C5, noteDur); delay(quarterNote);
+  noteDur = halfNote - pause; if(noteDur<10) noteDur=10; // Note longue
+  tone(BUZZER_PIN, NOTE_E5, noteDur); delay(halfNote);
+
+  // Petite variation pour finir ?
+  delay(quarterNote); // Pause
+  noteDur = quarterNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_D5, noteDur); delay(quarterNote);
+  noteDur = halfNote - pause; if(noteDur<10) noteDur=10;
+  tone(BUZZER_PIN, NOTE_C5, noteDur); delay(halfNote); // Fin sur C5
+
+  noTone(BUZZER_PIN);
+}
 // --- FIN des définitions ---
