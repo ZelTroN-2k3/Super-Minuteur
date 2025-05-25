@@ -179,4 +179,22 @@ void playTetrisTheme() {
 
   noTone(BUZZER_PIN);
 }
-// --- FIN des définitions ---
+
+
+// --- Nouvelle Mélodie : Bip-Bip ---
+void playBipBipMelody() {
+  // Utilise les constantes de fréquence et de durée du métronome
+  // définies dans conf.h (qui est inclus via melodie.h ou directement si besoin).
+  // BUZZER_PIN est également défini dans conf.h.
+
+  // Premier "Bip" (son accentué du métronome)
+  tone(BUZZER_PIN, METRONOME_ACCENT_FREQ, METRONOME_ACCENT_DURATION);
+  delay(METRONOME_ACCENT_DURATION + 70); // Durée du son + 70ms de pause
+
+  // Deuxième "Bip" (son accentué du métronome)
+  tone(BUZZER_PIN, METRONOME_ACCENT_FREQ, METRONOME_ACCENT_DURATION);
+  delay(METRONOME_ACCENT_DURATION + 70); // Durée du son + 70ms de pause
+
+  noTone(BUZZER_PIN); // S'assurer que le buzzer s'arrête
+}
+// --- FIN des définitions --

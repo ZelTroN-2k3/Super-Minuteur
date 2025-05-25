@@ -44,5 +44,6 @@ void playImperialMarch();
 void playZeldaTheme();
 void playNokiaTune(); 
 void playTetrisTheme(); 
+void playBipBipMelody();
 
 #endif // MELODIE_H
